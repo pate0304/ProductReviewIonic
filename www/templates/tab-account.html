@@ -1,15 +1,16 @@
 <ion-view view-title="Product">
-	<ion-content>
+	<ion-content class="padding">
+
 		<ion-list>
 			<h1 align="center">{{book.title}}</h1>
 			<p class="text-right">Price: {{book.price|currency}}</p>
 			<p class="text-right">Rating: {{book.rating}}</p>
 			<br>
 			<br>
-			<p>&nbsp;{{book.short_description}}.</p>
+			<p>{{book.short_description}}.</p>
 			<br>
-			<p>&nbsp;{{book.long_description}}.</p>
-			<div align="center">
+			<p>{{book.long_description}}.</p>
+			<div>
 				<img src="{{book.image}}" height="400" width="400">
 			</div>
 		</ion-list>

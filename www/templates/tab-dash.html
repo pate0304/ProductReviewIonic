@@ -2,18 +2,18 @@
 	<ion-content class="padding">
 
 		<header class="center">
-			<h1 align="center">Product Browsing App</h1>
+			<h2 align="center">Product Browsing App</h1>
 		</header>
 
 
 		<div align="center" class="col-xs-8 col-md-6" ng-repeat="categories in categories.categories">
-			<h1>{{categories.title}}</h1>
+			<h3>{{categories.title}}</h1>
 			<h2>
               <a class="btn btn-default btn-large" ui-sref="tab.category({catid: categories._id})" ui-sref-active="active" role="button">
                <img src="{{categories.image}}" height="300" width="300">
               </a>
           </h2>
 
-		</div>
+			</div>
 	</ion-content>
 </ion-view>
