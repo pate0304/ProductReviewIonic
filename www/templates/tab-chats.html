@@ -1,0 +1,21 @@
+<ion-view view-title="Categories">
+	<ion-content>
+		<div class="row">
+			<a href="#/home" class="btn btn-success btn-lg">Home</a>
+		</div>
+
+
+
+
+		<div align="center">
+			<div class="col-xs-8 col-md-6" ng-repeat="book in books">
+				<h4>{{book.title}}</h4>
+				<a class="btn btn-default btn-large" ui-sref="tab.product({bid: book._id})" ui-sref-active="active" role="button">
+					<img src="{{book.image}}" height="300" width="300">
+				</a>
+			</div>
+		</div>
+
+
+	</ion-content>
+</ion-view>
