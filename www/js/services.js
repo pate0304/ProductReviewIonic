@@ -5,7 +5,7 @@ angular.module('starter.services', [])
 			product: []
 		});
 
-		//Taken help and understood from Vaibhavi Desai
+
 		var _add = function (rate, productId) {
 			for (var i = 0; i < $localStorage.product.length; i++) {
 				if (productId == $localStorage.product[i]) {
